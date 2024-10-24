@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the 3d Animation slider </title>
-    <link rel="stylesheet" href="style/animation.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 3d Animation slider </title>
+<link rel="stylesheet" href="style/animation.css">
 </head>
 <body>
-    <div class="container">
-        <div class="product">
-            <div class="product-inner">
-                <div class="product-front">
-                    <div class="product-top">
-                        <h1>Nlik</h1>
-                    </div>
-                    <div class="product-botton">
-                        <p>Nike Running Shoes</p>
-                        <h3>Air Zoom Winflo 6 </h3>
-                        <h1>125 <span>$</span> </h1>
-                        <button type="button">Add To Bag</button>
+<div class="container">
+    <div class="product">
+
+        <img class="product-shop-img" src="ass/images/shoes.png" id="frontImg">
+        <img class="product-shop-img" src="ass/images/shoes2.png" id="backImg">
+
+        <div class="product-inner" id="productBox">
+            <div class="product-front">
+                <div class="product-top">
+                    <h1>Nlik</h1>
+                </div>
+                <div class="product-botton">
+                    <p>Nike Running Shoes</p>
+                    <h3>Air Zoom Winflo 6 </h3>
+                    <h1>125 <span>$</span> </h1>
+                    <button type="button">Add To Bag</button>
+                    <div class="color-select">
+                        <div class="sekect-item">
+                            <img src="ass/images/shoes-icon.png" >
+                        </div>
+                        <div class="sekect-item">
+                            <img src="ass/images/shoes-icon2.png" onclick="cardRight()">
+                        </div>
                     </div>
                 </div>
-                <div class="product-back"></div>
-                <div class="product-left-side"></div>
-                <div class="product-right-side"></div>
             </div>
+            <div class="product-back">
+                <div class="product-top product-top2">
+                    <h1>Nlik</h1>
+                </div>
+                <div class="product-botton">
+                    <p>Nike Running Shoes</p>
+                    <h3>Air Zoom Winflo 6 </h3>
+                    <h1>125 <span>$</span> </h1>
+                    <button type="button">Add To Bag</button>
+                    <div class="color-select">
+                        <div class="sekect-item">
+                            <img src="ass/images/shoes-icon.png" onclick="cardLeft()">
+                        </div>
+                        <div class="sekect-item">
+                            <img src="ass/images/shoes-icon2.png" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-left-side"></div>
+            <div class="product-right-side"></div>
         </div>
     </div>
+</div>
+  <script src="style/animation.js"></script>
 </body>
 </html>
